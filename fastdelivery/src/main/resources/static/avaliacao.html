@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastDelivery - Avaliação</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Fast<span>Delivery</span></a><nav><a href="index.html">Novo pedido</a><a href="pedido.html">Pedido #FD-02854</a></nav></header>
+<main class="auth-page">
+  <div class="auth-card review-card">
+    <div class="auth-head"><div class="review-icon">★</div><h1>Como foi seu pedido?</h1><p>Sua opinião ajuda o Jazz Burguer e o FastDelivery.</p></div>
+    <form id="review-form">
+      <div class="rating" aria-label="Escolha uma nota">
+        <input type="radio" id="r5" name="rating" value="5" checked><label for="r5">★</label>
+        <input type="radio" id="r4" name="rating" value="4"><label for="r4">★</label>
+        <input type="radio" id="r3" name="rating" value="3"><label for="r3">★</label>
+        <input type="radio" id="r2" name="rating" value="2"><label for="r2">★</label>
+        <input type="radio" id="r1" name="rating" value="1"><label for="r1">★</label>
+      </div>
+      <div class="field"><label>Comentário</label><textarea rows="5" placeholder="Conte como foi sua experiência..."></textarea></div>
+      <div class="tags"><button type="button" onclick="selectTag(this)">Entrega rápida</button><button type="button" onclick="selectTag(this)">Comida saborosa</button><button type="button" onclick="selectTag(this)">Boa embalagem</button><button type="button" onclick="selectTag(this)">Bom atendimento</button></div>
+      <button class="btn full" type="submit">Enviar avaliação</button>
+    </form>
+  </div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

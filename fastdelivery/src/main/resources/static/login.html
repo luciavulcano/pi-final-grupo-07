@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>FastDelivery - Login</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <header class="topbar">
+
+    <a class="brand" href="index.html">
+      Fast<span>Delivery</span>
+    </a>
+
+    <nav>
+
+      <a href="cadastro.html">
+        Criar conta
+      </a>
+
+      <a href="index.html">
+        Restaurantes
+      </a>
+
+    </nav>
+
+  </header>
+
+  <main class="auth-page">
+
+    <div class="auth-card compact">
+
+      <div class="auth-head">
+
+        <div class="logo-badge">
+          FD
+        </div>
+
+        <h1>
+          Bem-vindo de volta!
+        </h1>
+
+        <p>
+          Entre para continuar seu pedido.
+        </p>
+
+      </div>
+
+      <form id="login-form">
+
+        <div class="field">
+
+          <label>
+            E-mail
+          </label>
+
+          <input
+            type="email"
+            required
+            placeholder="voce@email.com">
+
+        </div>
+
+        <div class="field password-field">
+
+          <label>
+            Senha
+          </label>
+
+          <input
+            id="senha"
+            type="password"
+            required
+            placeholder="Sua senha">
+
+          <button
+            type="button"
+            class="toggle-pass"
+            onclick="togglePassword()">
+
+            Mostrar
+
+          </button>
+
+        </div>
+
+        <div class="login-row">
+
+          <label class="check">
+
+            <input type="checkbox">
+
+            Lembrar de mim
+
+          </label>
+
+          <a href="#">
+            Esqueci minha senha
+          </a>
+
+        </div>
+
+        <button
+          class="btn full"
+          type="submit">
+
+          Entrar
+
+        </button>
+
+      </form>
+
+      <p class="switch">
+
+        Ainda não possui conta?
+
+        <a href="cadastro.html">
+          Cadastre-se
+        </a>
+
+      </p>
+
+    </div>
+
+  </main>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
