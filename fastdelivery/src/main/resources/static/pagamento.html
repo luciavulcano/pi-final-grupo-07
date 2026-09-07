@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastDelivery - Pagamento</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Fast<span>Delivery</span></a><nav><a href="produtos.html">Cardápio</a><a href="pedido.html">Meu pedido</a></nav></header>
+<main class="container narrow">
+  <div class="steps"><span class="done">1. Produtos</span><span class="active">2. Pagamento</span><span>3. Acompanhamento</span></div>
+  <h1>Finalize seu pedido</h1>
+  <div class="checkout-grid">
+    <section class="panel">
+      <h2>Endereço de entrega</h2>
+      <div class="address-selected"><b>Casa</b><p>Rua das Flores, 250 — Recife/PE</p><button class="link-btn">Alterar</button></div>
+      <h2>Forma de pagamento</h2>
+      <label class="payment-option"><input type="radio" name="pay" value="CARTAO" checked> <span>💳 Cartão de crédito</span><small>Final 4521</small></label>
+      <label class="payment-option"><input type="radio" name="pay" value="DINHEIRO"> <span>💵 Dinheiro</span><small>Troco para R$ 100,00</small></label>
+      <label class="payment-option"><input type="radio" name="pay" value="PIX"> <span>📱 PIX</span><small>Pagamento instantâneo</small></label>
+      <button class="btn full" onclick="confirmOrder()">Confirmar pedido</button>
+    </section>
+    <aside class="panel order-summary">
+      <h2>Resumo do pedido</h2>
+      <div id="summary-items"></div>
+      <div class="summary-line"><span>Entrega</span><b>Grátis</b></div>
+      <hr><div class="summary-total"><span>Total</span><strong id="summary-total">R$ 0,00</strong></div>
+      <div class="promo"><input placeholder="Cupom de desconto"><button class="btn small">Aplicar</button></div>
+    </aside>
+  </div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

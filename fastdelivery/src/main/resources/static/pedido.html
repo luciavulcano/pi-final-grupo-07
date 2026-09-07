@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FastDelivery - Acompanhamento</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html">Fast<span>Delivery</span></a><nav><a href="index.html">Restaurantes</a><a href="avaliacao.html">Avaliar pedido</a></nav></header>
+<main id="pedido-page" class="container narrow">
+  <div class="order-top"><div><span class="eyebrow" id="pedido-codigo">Pedido</span><h1>Acompanhamento da entrega</h1><p class="muted" id="pedido-restaurante">Carregando pedido...</p></div><span class="status-badge" id="status-badge">Carregando...</span></div>
+  <section class="panel tracking">
+    <div class="progress-track">
+      <div class="track-line"></div>
+      <div class="track-step done"><span>✓</span><b>Pedido recebido</b><small>19:10</small></div>
+      <div class="track-step done"><span>✓</span><b>Preparando</b><small>19:16</small></div>
+      <div class="track-step active"><span>●</span><b>Saiu para entrega</b><small>19:35</small></div>
+      <div class="track-step"><span>4</span><b>Entregue</b><small>--:--</small></div>
+    </div>
+    <div class="delivery-box"><div class="delivery-avatar">🛵</div><div id="delivery-message"><b>Carregando...</b><p>Aguarde...</p></div></div>
+    <div class="fake-map"><div class="map-grid"></div><div class="map-road r1"></div><div class="map-road r2"></div><div class="map-point restaurant-point">🍔</div><div class="map-point rider-point">🛵</div><div class="map-point home-point">⌂</div></div>
+  </section>
+  <section class="two-col">
+    <div class="panel"><h2>Itens do pedido</h2><div id="itens-pedido"></div><hr><div class="summary-total"><span>Total</span><strong id="total-pedido">R$ 0,00</strong></div></div>
+    <div class="panel"><h2>Entrega</h2><p><b>Endereço</b><br>Rua das Flores, 250 — Recife/PE</p><p><b>Pagamento</b><br><span id="forma-pagamento">-</span></p><button id="advance-status" class="btn full" onclick="avancarPedido()">Simular próxima etapa</button><a id="avaliar-link" class="btn full" href="avaliacao.html" style="display:none;margin-top:10px">Avaliar pedido</a></div>
+  </section>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
